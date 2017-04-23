@@ -236,6 +236,7 @@ function hide_a_bar() {
 add_action( 'init', 'hide_a_bar' , 9 );
 
 add_action('init', 'script_js');
+
 function script_js() {
 	if (!is_admin()) {
 		wp_enqueue_script('script_js', get_bloginfo('template_url') . '/library/js/myajax.js', array('jquery'), '1',true);
